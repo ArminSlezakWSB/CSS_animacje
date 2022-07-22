@@ -1,0 +1,196 @@
+body{
+    background:  #212121;
+   /* background-image: url("gercross.png"), url("teczowa-flaga.png"), url("r.gif");*/
+    background-repeat: no-repeat;
+    background-size: 20%, 35%;
+    background-position: 62vw 55vh, 55vw 2vh;
+    color:#97e8d9; 
+    animation-name: roni;
+    animation-duration: 4s;
+    
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+.container{
+    border: 1px solid antiquewhite;
+    width: 250px;
+}
+span{
+    background: linear-gradient(90deg, red, orange, yellow, #148000, #00ffeb, #0028ff, #b800f2, #ff0000);
+    background-position: -70px;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #97e8d9;
+    -webkit-text-stroke-width: .1px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    width: 400px;
+    font-size: 4em;
+    font-weight: 800;
+	transform: scale(0.1);
+	
+    animation: opc 1s infinite, ruch 2.7s infinite; 
+
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+
+}
+div
+{
+    color: yellow
+}
+button{
+    padding:10px;
+    background:rgb(108, 51, 214);
+    border:solid 5px #ddd;
+    font-size:18px;
+    color:rgb(228, 6, 228);
+    cursor:pointer;
+    outline:none;
+    animation: button 2s infinite, obr 2s infinite;
+    position: relative;
+  }
+  button:hover{
+    background:rgb(63, 14, 153);
+    color:rgb(255, 239, 20);
+    animation: button 2s infinite, obr .5s infinite;
+  }/*
+.hubi
+{
+    width: 380px;
+    height: 216px;
+    background: rgb(103, 30, 30);
+    position: absolute;
+    left: 62%;
+    top: 55%;
+    transition: 2s ease-in 1s;
+}*/
+/*.hubi::after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: yellow;
+    width: 50px;
+    height: 15px;
+    border-radius: 50px;
+    
+    transition: 2s ease-in 1s;
+}*/
+.hubi:hover{
+    background: transparent;
+}
+/*.hubi:hover::after
+{
+    background: blue;
+    box-shadow: 0 0 20px 0 green;
+    opacity: 0;
+    transform: scale(5) rotate(170deg);
+}*/
+
+@keyframes ruch
+{
+    0%{
+        background-position: 0px;
+        letter-spacing: 50px;
+        margin-left: 100px;
+    }
+    50%
+    {
+        background-position: 200px;
+        letter-spacing: .1px;
+        margin-left: 400px;
+    }
+    100%
+    {
+        background-position: 0px;
+        letter-spacing: 50px;
+        margin-left: 100px;
+    }     
+}
+@keyframes opcs
+{
+	0%{
+        opacity: 1;
+        /*font-size: 6em;*/
+        
+    }
+    100%
+    {
+        opacity: 0;
+        /*font-size: 2em;*/
+        /*letter-spacing: 50px;*/
+    }    
+}
+
+@keyframes button
+{
+    0%{
+        background: black;
+        color: yellow;
+        border-color: yellow;
+        left: 0%;
+    }
+    25%{
+        left: 15%;
+    }
+    50%{
+        background: yellow;
+        color: black;
+        border-color: black;
+        left: 15%;
+    }
+    75%{
+        left: 0%;
+    }
+    100%{
+        background: black;
+        color: yellow;
+        border-color: yellow;
+        left: 0%;
+    }
+}
+@keyframes obr
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360%);
+    }
+}
+
+
+.text
+{
+    font-size: 120px;
+    animation: sz 1.5s infinite;
+}
+tspan{
+    font-weight:700;
+}
+
+@keyframes sz
+{
+    0%{
+        opacity: 0;
+    }
+    25%,75%{
+        opacity: 1;
+    }
+    30%,70%{
+        text-shadow: 0 0 20px rgb(255, 0, 216);
+        text-shadow: 10px 0 20px rgb(255, 0, 216);
+        text-shadow: -10px 0 20px rgb(255, 0, 216);
+    }
+    100%{
+        opacity: 0;
+    }
+}

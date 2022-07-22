@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="300">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="kulka.css">
+    <link rel="stylesheet" href="clock/clock.css">
+    <link rel="stylesheet" href="preloader/pre.css">
+</head>
+<body id="body">
+      <div id="wrap">
+          <div class="circle"></div>
+          <div class="circle"></div>
+      </div>
+       <main>
+        <span>Losuj liczbę</span> <br />
+        Losuj liczby  <button onclick="losuj();">losuj</button>
+    <!--<button onclick="losuj(6, 1, 49);">losuj</button>-->
+        <div id="liczby"></div>
+        <div class="hubi"></div>
+        <svg width="800" height="500" xmls="http://w3.org/2000/svg" version="1.1" style="border: 1px solid transparent;">
+          
+               <!-- <path d="M200,300 Q400,50 600,300 T1000,300"
+        fill="none" stroke="red" stroke-width="5"  />-->
+                <!--<path id="js" d="M10,10 Q50,100 270,20 Q300,200 405,210 q " fill="none" stroke="red" stroke-width="5"/>-->
+            <!-- d="M100,200 C100,100 250,100 250,200 S400,300 400,200" -->
+                
+            <!-- d="M20,200 C100,0 510,400 600,150" -->
+                <defs>
+                    <path id="js2" d="M70,200 C100,0 510,400 700,250" fill="none" stroke="green" stroke-width="5"/>
+               </defs>
+                <text class="text">
+                    <!-- fill="#911427" -->
+                    <textPath xlink:href="#js2" fill="none" stroke="white" s stroke-width="2">
+                        <tspan>JavaSzkrypt</tspan>
+                    </textPath>
+                </text>
+                
+          
+        </svg>
+      
+    
+    <div class="containers">
+        <div class="pole" id="pole">
+            <div class="kulka" id="kulka"></div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="containers" style="justify-content: center;">
+        <div class="clock" id="clock">
+            <div class="sights" id="second"></div>
+            <div class="sights" id="minute"></div>
+            <div class="sights" id="hour"></div>
+        </div>
+    </div>
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="kulka.js"></script>
+    <script src="clock/clock.js"></script>
+    <script src="preloader/pre.js"></script>
+</body>
+</html>

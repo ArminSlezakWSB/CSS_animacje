@@ -1,0 +1,17 @@
+.pole{
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(90deg,  rgba(201, 20, 20, 0.81), #ad3424, rgba(201, 20, 20, 0.81), #ad3424, rgba(201, 20, 20, 0.81));
+    border: 3px solid #8e1818;
+    margin: 20px;
+    
+    position: absolute;
+}
+.kulka{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    
+    position: absolute;
+}

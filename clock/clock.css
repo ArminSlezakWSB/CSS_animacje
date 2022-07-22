@@ -1,0 +1,78 @@
+.container{
+    min-height:65vh;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+.clock{
+    width:300px;
+    height: 300px;
+    
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    position: fixed;
+    top: 50%;
+    left: 70%;
+    
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid black; 
+    background-image: url("tarcza.png");
+    background-position: 0 0;
+    background-size: contain;
+}
+.clock::after
+{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+    width: 10px;
+    height:10px;
+    background: black;
+    border-radius: 50%;
+}
+.sights
+{
+    position: absolute;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+#second
+{
+    width: 160px;
+    height: 5px;
+    
+    left: 130px;
+    top:145px;
+    
+    background: #a21111;
+    transform-origin: 20px;
+    
+}
+#minute
+{
+    width: 110px;/*110*/
+    height: 5px;
+    background: black;
+    
+    top:147px;
+    left: 145px;
+    
+    transform-origin: 5px;  
+}
+#hour
+{
+    width: 70px;/*70*/
+    height: 5px;
+    
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background: #6f6767;
+    transform-origin: 0px;
+}
